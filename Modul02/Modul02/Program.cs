@@ -11,6 +11,8 @@ namespace Modul02
 			//Дефиниране на променливи
 			int a = 0, b = 0;
 			int sum = 0;
+			string programe_name = "Modul02-Primeri";
+			String program_version = "1.0";
 
 			//Събиране на числа
 
@@ -18,6 +20,11 @@ namespace Modul02
 			b = 5;
 
 			sum = a + b;
+
+			//За програмата 
+
+			Console.WriteLine (programe_name);
+			Console.WriteLine ("Versia "+program_version+"\n\n");
 
 			//Писане на конзолата
 			Console.Write ( a);
@@ -51,7 +58,9 @@ namespace Modul02
 
 			Console.WriteLine ("\nHwashtane na ostatyk");
 
-			Console.WriteLine ( a%b ); //5
+			Console.WriteLine ( a%b ); //5, 1.5
+
+
 }
 	}
 }
