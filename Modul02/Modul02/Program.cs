@@ -11,7 +11,7 @@ namespace Modul02
 			//Дефиниране на променливи
 			int a = 0, b = 0;
 			int sum = 0;
-			string programe_name = "Modul02-Primeri";
+			string program_name = "Modul02-Primeri";
 			String program_version = "1.0";
 
 			//Събиране на числа
@@ -23,7 +23,7 @@ namespace Modul02
 
 			//За програмата 
 
-			Console.WriteLine (programe_name);
+			Console.WriteLine (program_name);
 			Console.WriteLine ("Versia "+program_version+"\n\n");
 
 			//Писане на конзолата
