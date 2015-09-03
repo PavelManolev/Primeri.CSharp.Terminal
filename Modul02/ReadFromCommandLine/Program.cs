@@ -15,7 +15,20 @@ namespace ReadFromCommandLine
 			b = Convert.ToInt32 (Console.ReadLine ());
 
 			//Печат на резултат
-			Console.WriteLine ("\n\nResult a+b is " + (a+b).ToString()+"\n\n\n");
+			Console.WriteLine ("\n\nResult a+b is " + (a+b).ToString()+"\n");
+
+			string test = "1";
+			test += ",2";
+			test += ",100";
+			test += ",4";
+			test += ",5";
+
+			Console.WriteLine ("Sybirane c+=:" + test + "\n");
+
+			test = test.Replace (",", ";");
+			Console.WriteLine ("Work with replace:" + test + "\n");
+
+			Console.WriteLine ("3th simbol:" + test.Split (';')[2]);
 		}
 	}
 }
