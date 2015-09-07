@@ -28,7 +28,7 @@ namespace ReadFromCommandLine
 			test = test.Replace (",", ";");
 			Console.WriteLine ("Work with replace:" + test + "\n");
 
-			Console.WriteLine ("3th simbol:" + test.Split (';')[2]);
+			Console.WriteLine ("3th символ:" + test.Split (';')[2]);
 		}
 	}
 }
