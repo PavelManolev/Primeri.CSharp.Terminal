@@ -6,7 +6,21 @@ namespace Modul02
 	{
 		public static void Main (string[] args)
 		{
-			
+			//Задачи от модул02 Видео 02
+			int c= 0 , d = 0, e= 0;
+			string programe_zadacha = "Модул2 - първа задача";
+
+			//задаване на стойностти на a и b
+			Console.WriteLine (programe_zadacha);
+			c = Convert.ToInt32 (Console.ReadLine ());
+			d = Convert.ToInt32 (Console.ReadLine ());
+
+			e = c;
+			c = d;
+			d = e;
+
+			Console.WriteLine (c);
+			Console.WriteLine (d);
 
 			//Дефиниране на променливи
 			int a = 0, b = 0;
