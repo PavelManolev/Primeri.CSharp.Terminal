@@ -12,7 +12,8 @@ namespace Модул03
 			Console.Write (" > b = " );
 			b = Convert.ToDouble (Console.ReadLine ());
 
-			Console.WriteLine ("\n\n>a / b ="+(a/b).ToString());
+			string _format = "#0.00 m3";
+			Console.WriteLine ("\n\n>a / b ="+(a/b).ToString(_format));
 		}
 	}
 }
