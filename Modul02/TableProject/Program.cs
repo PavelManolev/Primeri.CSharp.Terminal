@@ -27,6 +27,7 @@ namespace TableProject
 
 			Console.WriteLine ((table[_index, (int) ti.ime])[0]+", "+table[_index, (int) ti.familia]+", "+table[_index, (int) ti.godini]+" г.");
 
+			Console.ReadKey ( ); 
 		}
 	}
 }
