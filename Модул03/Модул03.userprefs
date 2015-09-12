@@ -1,7 +1,9 @@
 ﻿<Properties StartupItem="BoolExplore2\BoolExplore2.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Модул03\Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BoolExplore2\Program.cs">
     <Files>
+      <File FileName="BoolExplore\Program.cs" Line="27" Column="3" />
+      <File FileName="BoolExplore2\Program.cs" Line="55" Column="7" />
       <File FileName="Модул03\Program.cs" Line="24" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
