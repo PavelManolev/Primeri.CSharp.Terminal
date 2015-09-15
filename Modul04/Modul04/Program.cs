@@ -17,7 +17,7 @@ namespace Modul04
 			Console.WriteLine ("Име".PadRight(14)+"Фамилия".PadRight(14)+"Години".PadRight(14));
 			Console.WriteLine ("========================================");
 
-			Console.WriteLine (_table.Length);
+
 			// Тяло на таблица
 
 
@@ -34,15 +34,27 @@ namespace Modul04
 //				Console.WriteLine ();
 //			}
 		//Пример с While
-			int i =0;
-			while (i<_table.Length/3 )
-			{
+//			int i =0;
+//			while (i<_table.Length/3 )
+//			{
+//				Console.WriteLine (_table [i,0].PadRight(14)+
+//					_table [i,1].PadRight(14)+
+//					_table [i,2].PadRight(14));
+//
+//				i++;
+//			}
+		//Пример с Do While
+			int i=0;
+			do {
+				//код
 				Console.WriteLine (_table [i,0].PadRight(14)+
-					_table [i,1].PadRight(14)+
-					_table [i,2].PadRight(14));
+				_table [i,1].PadRight(14)+
+				_table [i,2].PadRight(14));
+
 
 				i++;
-			}
+			}while(i<_table.Length/3);
+		
 		}
 	}
 }
