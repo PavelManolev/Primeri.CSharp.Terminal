@@ -19,13 +19,29 @@ namespace Modul04
 
 			Console.WriteLine (_table.Length);
 			// Тяло на таблица
-			for ( int i=0; i<_table.Length/3 ; i++ )
+
+
+
+
+
+//			//Пример с For
+//			for ( int i=0; i<_table.Length/3 ; i++ )
+//			{
+//				for (int j = 0; j < 3; j++)
+//				{
+//					Console.Write ( _table[i,j].PadRight(14));
+//				}
+//				Console.WriteLine ();
+//			}
+		//Пример с While
+			int i =0;
+			while (i<_table.Length/3 )
 			{
-				for (int j = 0; j < 3; j++)
-				{
-					Console.Write ( _table[i,j].PadRight(14));
-				}
-				Console.WriteLine ();
+				Console.WriteLine (_table [i,0].PadRight(14)+
+					_table [i,1].PadRight(14)+
+					_table [i,2].PadRight(14));
+
+				i++;
 			}
 		}
 	}
