@@ -45,6 +45,7 @@ namespace Modul04
 //			}
 		//Пример с Do While
 			int i=0;
+
 			do {
 				//код
 				Console.WriteLine (_table [i,0].PadRight(14)+
