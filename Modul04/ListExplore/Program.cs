@@ -22,6 +22,23 @@ namespace ListExplore
 
 
 				//Добавяне на стойности в List-a
+				// add int
+
+
+
+				if (_userinput.ToLower().Contains ("add"))  //add 5
+				{
+							try
+							{
+									int _add=0;
+									if (int.TryParse(_userinput.Split (' ')[1], out _add)) //преобразува входа в int променлива
+									{
+										_list.Add (_add);
+									}
+								Console.WriteLine ("\n");
+
+							}catch {}
+				}
 
 				//Преглед на list-a
 				if (_userinput.Contains ("show")) 
@@ -32,13 +49,16 @@ namespace ListExplore
 					{
 						
 						Console.Write (_list[i]);
-						if (i!=_list.Count-1) Console.Write (", ");
+						if (i!=_list.Count-1) Console.Write (", ");  //не слага запетайка след последния елемент на листа
 					}
-					Console.WriteLine ();
+					Console.WriteLine ("\n");
 				}
 
 				//размер на Лист-а
-
+				if (_userinput.ToLower().Contains ("size"))
+				{
+					Console.WriteLine ("размер на списъка: "+ _list.Count.ToString ()+"\n" );    //изписваме размера на листа
+				}
 
 			} while (_userinput != "exit");
 
