@@ -43,14 +43,20 @@ namespace ListExplore
 				//Преглед на list-a
 				if (_userinput.Contains ("show")) 
 				{
-					Console.Write ("_list: ");
+					Console.Write ("Списък: ");
 
-					for (int i=0; i<_list.Count;i++)
+					foreach (int value in _list)
 					{
-						
-						Console.Write (_list[i]);
-						if (i!=_list.Count-1) Console.Write (", ");  //не слага запетайка след последния елемент на листа
+						Console.Write (value.ToString ()+", ");
 					}
+
+
+//					for (int i=0; i<_list.Count;i++)
+//					{
+//						
+//						Console.Write (_list[i]);
+//						if (i!=_list.Count-1) Console.Write (", ");  //не слага запетайка след последния елемент на листа
+//					}
 					Console.WriteLine ("\n");
 				}
 
@@ -60,8 +66,8 @@ namespace ListExplore
 					Console.WriteLine ("размер на списъка: "+ _list.Count.ToString ()+"\n" );    //изписваме размера на листа
 				}
 
-			} while (_userinput != "exit");
-
+			} while(_userinput != "exit");
+		
 
 		}
 	}
