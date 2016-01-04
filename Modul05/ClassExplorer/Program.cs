@@ -4,22 +4,35 @@ namespace ClassExplorer
 {
 	class person
 	{
-		public string simpleString  = "Тестова променлива от клас";
-		public string user = "";
+		private string simpleString  = "Тестова променлива от клас";
+		private string user = "";
 		private string hiddenString = "";
 		public person (string _ini)
 		{
+			
+			getUser (_ini);
+			setWelcomeTExt ();
+			
+
+		}
+
+		private void getUser (string _ini)
+		{
 			if (_ini == "password1") hiddenString = "Потребител 1";
 			if (_ini == "password2") hiddenString = "Потребител 2";
-			user = hiddenString;
 
+			user = hiddenString;
+		}
+		private void setWelcomeTExt ()
+		{
 			if (hiddenString.Length > 0)
 				simpleString = "Добре дошли отново," + user + "!";
 			else
 				simpleString = "Вия нямате достъп до тази програма";
-				
-			
-
+		}
+		public string getWelcomeMessage()
+		{
+			return simpleString;
 		}
 
 
@@ -37,10 +50,8 @@ namespace ClassExplorer
 			//Дефиниране на клас
 			person _person = new person (_user);
 			//Достъпване на клас
-			Console.WriteLine ( _person.simpleString );
-			_persons.simpleString; 
-			_persons.user;
-			_person.hiddenstring;
+			Console.WriteLine ( _person.getWelcomeMessage () );
+
 		}
 	}
 }
