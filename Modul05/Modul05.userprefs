@@ -2,9 +2,20 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ClassExplorer\Program.cs">
     <Files>
-      <File FileName="Modul05\Program.cs" Line="147" Column="1" />
-      <File FileName="ClassExplorer\Program.cs" Line="43" Column="17" />
+      <File FileName="Modul05\Program.cs" Line="53" Column="4" />
+      <File FileName="ClassExplorer\Program.cs" Line="20" Column="4" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Modul05" expanded="True">
+            <Node name="ClassExplorer" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
